@@ -1,6 +1,5 @@
 #!/bin/bash
 
-
 RED="31m"
 GREEN="32m"
 YELLOW="33m"
@@ -93,7 +92,7 @@ download_file() {
         apt update
         apt -y install wget
     fi
-    rm -rf ./titan*.gz
+    rm -rf ./titan*
     wget $1
     tar -zxf titan_*.tar.gz
     rm -rf ./titan*.gz
