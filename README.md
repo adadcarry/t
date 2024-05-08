@@ -12,7 +12,7 @@ shell脚本，linux系统运行，支持ubuntu、armbian、debian、hiveos，无
 #### 安装教程
 在终端中输入以下命令，回车执行：
 
-bash <(curl -s -L https://gitee.com/blockchain-tools/titan-tools/raw/master/titan.sh)
+`bash <(curl -s -L https://gitee.com/blockchain-tools/titan-tools/raw/master/titan.sh)`
 
 ![输入图片说明](images/titan.jpg)
 
@@ -20,7 +20,7 @@ bash <(curl -s -L https://gitee.com/blockchain-tools/titan-tools/raw/master/tita
 
 1.  部署太快可能会因为主网的访问失败导致节点注册失败，手动注册方法如下（复制全部命令）：
 
-for i in {1..5};do sudo -u admin$i titan-edge bind --hash=改成你的id https://api-test1.container1.titannet.io/api/v2/device/binding;done
+`for i in {1..5};do sudo -u admin$i titan-edge bind --hash=改成你的id https://api-test1.container1.titannet.io/api/v2/device/binding;done`
 
 2. 交流q群:    522696951
 3. 官网 https://test1.titannet.io
