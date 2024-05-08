@@ -1,14 +1,5 @@
 #!/bin/bash
-if [[ ! $(command -v wget) ]];then
-        echo "开始安装wget..."
-        apt update
-        apt -y install wget
-fi
-rm -rf ./titab.tar.gz
-wget http://0.0.0.0/tar.gz
-#!/bin/bash
 
-titan_file=titan
 
 RED="31m"
 GREEN="32m"
@@ -22,6 +13,9 @@ colorEcho() {
     echo -e "\033[${COLOR}${@:2}\033[0m"
 }
 
+titan_amd64_url=https://gitee.com/clwangweb/titan-tools/releases/download/0.1.18/titan_v0.1.18_linux_amd64.tar.gz
+titan_arm_url=https://gitee.com/clwangweb/titan-tools/releases/download/0.1.18/titan_v0.1.18_linux_arm.tar.gz
+titan_arm64_url=https://gitee.com/clwangweb/titan-tools/releases/download/0.1.18/titan_v0.1.18_linux_arm64.tar.gz
 
 init_system() {
     # 关闭 selinux
@@ -93,8 +87,17 @@ user_add() {
     done
 }
 
-copy_file() {
-    \cp -f ./$titan_file/* /usr/local/bin
+download_file() {
+    if [[ ! $(command -v wget) ]];then
+        echo "开始安装wget..."
+        apt update
+        apt -y install wget
+    fi
+    rm -rf ./titan*.gz
+    wget $1
+    tar -zxf titan_*.tar.gz
+    rm -rf ./titan*.gz
+    mv $(ls -d titan*)/* /usr/local/bin
 }
 
 service_install() {
@@ -144,13 +147,13 @@ install_app(){
     read -p "$(echo -e "请选择CPU架构[1-3]:|choose[1-3]:")" choose
     case $choose in
     1)
-        titan_file=titan
+        download_url=$titan_amd64_url
         ;;
     2)
-        titan_file=titan_arm
+        download_url=$titan_arm_url
         ;;
     3)
-        titan_file=titan_arm64
+        download_url=$titan_arm64_url
         ;;
     *)
         echo "输入错误，请重新选择"
@@ -162,7 +165,7 @@ install_app(){
     init_system
     change_limit
     user_add
-    copy_file
+    download_file $download_url
     service_install
     monitor_install
 }
@@ -180,19 +183,19 @@ update_app() {
     read -p "$(echo -e "请选择CPU架构[1-3]:|choose[1-3]:")" choose
     case $choose in
     1)
-        titan_file=titan
+        download_url=$titan_amd64_url
         ;;
     2)
-        titan_file=titan_arm
+        download_url=$titan_arm_url
         ;;
     3)
-        titan_file=titan_arm64
+        download_url=$titan_arm64_url
         ;;
     *)
         echo "输入错误，请重新选择"
         ;;
     esac
-    copy_file
+    download_file $download_url
     restart_app
     colorEcho ${BLUE} "升级成功！update success"
 }
