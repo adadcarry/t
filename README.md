@@ -22,3 +22,5 @@ bash <(curl -s -L https://gitee.com/blockchain-tools/titan-tools/raw/master/tita
 for i in {1..5};do sudo -u admin$i titan-edge bind --hash=改成你的id https://api-test1.container1.titannet.io/api/v2/device/binding;done
 
 2. 交流q群:    522696951
+3. 官网 https://test1.titannet.io
+4. 官方原版教程：https://titannet.gitbook.io/titan-network-cn
