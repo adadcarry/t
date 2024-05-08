@@ -9,8 +9,10 @@ shell脚本，linux系统运行，支持ubuntu、armbian、debian
 
 
 #### 安装教程
-
+在终端中输入以下命令，回车执行：
 bash <(curl -s -L https://gitee.com/blockchain-tools/titan-tools/raw/master/titan.sh)
+
+![输入图片说明](images/titan.jpg)
 
 #### 使用说明
 
