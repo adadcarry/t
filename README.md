@@ -10,7 +10,7 @@ shell脚本，linux系统运行，支持ubuntu、armbian、debian
 
 #### 安装教程
 
-bash <(curl -s -L https://gitee.com/clwangweb/titan-tools/raw/master/titan.sh)
+bash <(curl -s -L https://gitee.com/blockchain-tools/titan-tools/raw/master/titan.sh)
 
 #### 使用说明
 
