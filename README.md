@@ -1,10 +1,10 @@
 # titan-tools
 
 #### 介绍
-titan-network部署、升级、维护工具
+titan-network部署、升级、维护工具。
 
 #### 软件架构
-软件架构说明
+shell脚本，linux系统运行，支持ubuntu、armbian、debian
 
 
 #### 安装教程
