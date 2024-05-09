@@ -128,10 +128,10 @@ service_install() {
 		    sudo -u admin${i} titan-edge state  >/dev/null 2>&1
 		    if [ $? -ne 0 ];then
 			if [ $s -lt 10 ];then
-	                    let s=$s+5
+	            let s=$s+5
 			    continue
 			else
-		            s=0
+		        s=0
 			    systemctl restart titan${i}.service
 			    continue
 			fi
