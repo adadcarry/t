@@ -5,12 +5,13 @@ titan-network节点 Linux系统批量部署、升级、维护工具，支持一�
 一键部署完自动安装监控，无需再单独安装监控。
 
 #### 软件架构
-shell脚本，linux系统运行，支持ubuntu、armbian、debian、hiveos，无需docker
+shell脚本，linux系统运行，支持ubuntu、armbian、debian、hiveos、centos，无需docker
 支持x86_64、arm32、arm64，支持树莓派、香橙派、斐讯N1、玩客云、章鱼星球、机顶盒等arm设备
 
-不支持centos    
-不支持centos    
-不支持centos
+centos只支持8和stream版本，7不支持    
+centos只支持8和stream版本，7不支持    
+centos只支持8和stream版本，7不支持   
+   
 
 #### 安装教程
 在终端中输入以下命令，回车执行：
