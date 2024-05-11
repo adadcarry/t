@@ -30,5 +30,6 @@ centos只支持8和stream版本，7不支持
 2. 官网 https://test1.titannet.io/intiveRegister?code=UtYELY
 
 3. 官方原版教程：https://titannet.gitbook.io/titan-network-cn
-
-4. 交流q群:  522696951
+4. 官方的节点管理命令在这里
+`https://titannet.gitbook.io/titan-network-cn/herschel-testnet/yun-hang-jie-dian-zhuan-qu/cli-guan-li-ming-ling`
+5. 交流q群:  522696951
