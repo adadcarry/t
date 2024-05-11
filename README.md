@@ -25,7 +25,7 @@ centos只支持8和stream版本，7不支持
 
 1.  部署太快可能会因为主网的访问失败导致节点注册失败，手动注册方法如下（复制全部命令）：
 
-`for i in {1..5};do sudo -u admin$i titan-edge bind --hash=改成你的id https://api-test1.container1.titannet.io/api/v2/device/binding;done`
+`sudo -u admin1 titan-edge bind --hash=改成你的id https://api-test1.container1.titannet.io/api/v2/device/binding`
 
 2. 官网 https://test1.titannet.io/intiveRegister?code=UtYELY
 
