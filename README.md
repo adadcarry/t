@@ -24,14 +24,12 @@ centos只支持8和stream版本，7不支持
 #### 使用说明
 
 1.  部署太快可能会因为主网的访问失败导致节点注册失败，手动注册方法如下（复制全部命令）：
-
-`sudo -u admin1 titan-edge bind --hash=改成你的id https://api-test1.container1.titannet.io/api/v2/device/binding`
+`for i in {1..5};do sudo -u admin$i titan-edge bind --hash=A35147CB-E777-439A-92F1-C3FB2F2FD4F1 https://api-test1.container1.titannet.io/api/v2/device/binding;done`
 
 2. 官网 https://test1.titannet.io/intiveRegister?code=UtYELY
 
 3. 官方原版教程：https://titannet.gitbook.io/titan-network-cn
 4. 官方的节点管理命令在这里
 `https://titannet.gitbook.io/titan-network-cn/herschel-testnet/yun-hang-jie-dian-zhuan-qu/cli-guan-li-ming-ling`  
-
 所有命令前面加上sudo -u admin1或者sudo -u admin1，管理哪个节点admin后面数字就改成几。
 5. 交流q群:  522696951
