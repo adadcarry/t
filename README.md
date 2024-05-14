@@ -31,5 +31,5 @@ centos只支持8和stream版本，7不支持
 3. 官方原版教程：https://titannet.gitbook.io/titan-network-cn
 4. 官方的节点管理命令在这里
 `https://titannet.gitbook.io/titan-network-cn/herschel-testnet/yun-hang-jie-dian-zhuan-qu/cli-guan-li-ming-ling`  
-所有命令前面加上sudo -u admin1或者sudo -u admin1，管理哪个节点admin后面数字就改成几。
+所有命令前面加上sudo -u admin1或者sudo -u admin2，管理哪个节点admin后面数字就改成几。
 5. 交流q群:  522696951
