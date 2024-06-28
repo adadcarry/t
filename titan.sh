@@ -113,7 +113,6 @@ download_file() {
     for i in `ls titan*.tar.gz`
     do tar -zxf $i
     done
-    tar -zxf titan*.gz
     rm -rf ./titan*.gz
     mv $(ls -d titan-edge*)/libgoworkerd.so /lib
     mv $(ls -d titan-edge*)/titan-edge /usr/bin
