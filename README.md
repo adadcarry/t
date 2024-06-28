@@ -1,9 +1,11 @@
-# titan-tools
+# titan-tools  
 
 ## 推荐码UtYELY
 #### 介绍
 titan-network节点 Linux系统批量部署、升级、维护工具，支持一键更新。自主选择部署节点数量，自动安装监控，故障自动重启。
-一键部署完自动安装监控，无需再单独安装监控。
+一键部署完自动安装监控，无需再单独安装监控。  
+已更新到0.1.19，支持卡西尼测试（三测）
+
 
 #### 软件架构
 shell脚本，linux系统运行，支持ubuntu、armbian、debian、hiveos、centos，无需docker
