@@ -12,8 +12,8 @@ colorEcho() {
     echo -e "\033[${COLOR}${@:2}\033[0m"
 }
 
-titan_amd64_url=https://gitee.com/blockchain-tools/titan-tools/releases/download/0.1.19/titan-edge_v0.1.19_linux_amd64.tar.gz
-titan_amd64_url2=https://gitee.com/blockchain-tools/titan-tools/releases/download/0.1.19/titan_v0.1.19_linux_amd64.tar.gz
+titan_amd64_url=https://github.com/adadcarry/t/releases/download/0.1.19/titan-edge_v0.1.19_linux_amd64.tar.gz
+titan_amd64_url2=https://github.com/adadcarry/t/releases/download/0.1.19/titan_v0.1.19_linux_amd64.tar.gz
 titan_arm_url=https://gitee.com/blockchain-tools/titan-tools/releases/download/0.1.18/titan_v0.1.18_linux_arm.tar.gz
 titan_arm64_url=https://gitee.com/blockchain-tools/titan-tools/releases/download/0.1.18/titan_v0.1.18_linux_arm64.tar.gz
 
